@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>{{message}}</h1>
+    <table class="table table-striped">
+        {{#each people}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td><a href="/people/{{this.id}}">{{this.name}}</a></td>
+            </tr>
+        {{/each}}
+    </table>
+</div>
